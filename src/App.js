@@ -34,6 +34,7 @@ class App extends Component {
     this.setState({
       activeUser: activeUser[0]
     })
+    window.scrollTo(0, 968)
   }
 
   handleClearUser() {
@@ -43,7 +44,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log(window.scrollY)
 
     const cardList = this.state.users.map((user, i) => {
       return (
@@ -66,7 +67,7 @@ class App extends Component {
                    location={user.location}
                    id={user.id.value}
                    clearUser={this.handleClearUser}/>) :
-      (<Landing />)
+      (null)
     }
 
     return (
@@ -76,6 +77,7 @@ class App extends Component {
             {cardList}
           </div>
           <section className="landing-content">
+            <Landing />
             {landingRender()}
           </section>
         </div>
