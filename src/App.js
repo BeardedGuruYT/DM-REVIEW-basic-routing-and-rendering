@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import {Switch, Route} from 'react-router-dom';
 import UserCard from './components/content/UserCard';
 import Landing from './components/content/Landing';
 import UserDetail from './components/content/UserDetail';
@@ -76,7 +77,10 @@ class App extends Component {
             {cardList}
           </div>
           <section className="landing-content">
-            {landingRender()}
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route path="/user/:id" component={UserDetail} />
+            </Switch>
           </section>
         </div>
       </main>
