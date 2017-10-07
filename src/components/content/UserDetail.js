@@ -13,7 +13,8 @@ export default function UserDetail(props) {
             <h3>{props.email}</h3>
             <h3>{props.cell}</h3><br />
             <h4>{props.location.street}<br />
-                {props.location.city}, {props.location.state} {props.location.postcode}</h4>
+                {props.location.city}, {props.location.state} {props.location.postcode}
+            </h4>
         </main>
     )
 }
