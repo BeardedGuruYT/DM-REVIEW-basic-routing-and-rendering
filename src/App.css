@@ -1,4 +1,88 @@
 .App {
-  text-align: center;
+  width:100%;
 }
 
+.main-content {
+  width:100%;
+  padding-top:24px;
+}
+
+.users-container {
+  padding:12px 12px;
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+/*--------user cards--------*/
+
+.card-wrap {
+  height:64px;
+  width:200px;
+  background:#F7F7F7;
+  border:1px solid #999999;
+  border-radius:4px;
+  display:flex;
+  margin-bottom:12px;
+}
+
+.card-wrap:hover {
+  background:#FFFFFF;
+  cursor:pointer;
+}
+
+.user-pic {
+  width:64px;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.user-img {
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:lightblue;
+}
+
+.user-info {
+  width:160px;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.user-info p, h5 {
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
+/*--------landing--------*/
+
+.landing-content {
+  width:95%;
+  height:700px;
+  background:#F9F9F9;
+  margin:auto;
+}
+
+.landing-wrap {
+  width:100%;
+  height:100%;
+  padding-bottom:64px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.landing-wrap img {
+  max-width:100%;
+}
+
+
+.user-detail-wrap {
+  width:100%;
+  height:100%;  
+}
